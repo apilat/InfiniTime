@@ -13,7 +13,7 @@ static void btnCallback(lv_obj_t* obj, lv_event_t event) {
   screen->OnButtonEvent(obj, event);
 }
 
-Tennis::Tennis(DisplayApp* app) : Screen(app) {
+Tennis::Tennis() : Screen() {
   lv_obj_t* labelColon = lv_label_create(lv_scr_act(), nullptr);
   lv_obj_set_style_local_text_font(labelColon, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &jetbrains_mono_76);
   lv_obj_set_style_local_text_color(labelColon, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_WHITE);

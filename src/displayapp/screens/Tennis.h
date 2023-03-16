@@ -54,7 +54,7 @@ namespace Pinetime {
     namespace Screens {
       class Tennis : public Screen {
       public:
-        explicit Tennis(DisplayApp* app);
+        Tennis();
         ~Tennis() override;
 
         bool OnTouchEvent(TouchEvents event) override;
